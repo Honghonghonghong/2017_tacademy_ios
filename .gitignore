@@ -1,6 +1,8 @@
 .*
 *.xcuserstate
 project.xcworkspace/
+*.perspectivev3
+!default.perspectivev3
 xcuserdata/
 .DS_Store
 !.gitignore
