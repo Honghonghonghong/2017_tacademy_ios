@@ -97,6 +97,23 @@ tableView.rowHeight = UITableViewAutomaticDimension
 	-	장점, 셀 outlet을 view에서 가능?
 	-	TableViewController에서만 사용가능
 
+Collection view
+---------------
+
+-	collection view controller
+-	셀 작성, .. ,재사용 ID설정
+
+```
+- dataSource, deletate 연결
+- dataSource의 numberOfItems.... 설정
+- CellForItemAt 설정
+- dequeReuseableCell
+- collectionView의 cell size에 영향받음
+
+- UICollectionViewCell class 만들기
+
+```
+
 Tip
 ---
 
