@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sliderView_paging" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kq6-0g-A79">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqe-HR-L1w">
+                                        <rect key="frame" x="0.0" y="0.0" width="1500" height="647"/>
+                                        <connections>
+                                            <segue destination="63d-CK-YSA" kind="embed" id="vos-eK-BcL"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wqe-HR-L1w" firstAttribute="top" secondItem="kq6-0g-A79" secondAttribute="top" id="9iz-wN-Bx1"/>
+                                    <constraint firstItem="Wqe-HR-L1w" firstAttribute="height" secondItem="kq6-0g-A79" secondAttribute="height" id="B4Z-rQ-D40"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wqe-HR-L1w" secondAttribute="trailing" id="Fcw-Dw-Z7d"/>
+                                    <constraint firstItem="Wqe-HR-L1w" firstAttribute="leading" secondItem="kq6-0g-A79" secondAttribute="leading" id="T6F-Hw-Eum"/>
+                                    <constraint firstItem="Wqe-HR-L1w" firstAttribute="width" secondItem="kq6-0g-A79" secondAttribute="width" multiplier="4" id="UzB-mT-jTN"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wqe-HR-L1w" secondAttribute="bottom" id="lH7-eH-rPS"/>
+                                    <constraint firstItem="Wqe-HR-L1w" firstAttribute="width" secondItem="kq6-0g-A79" secondAttribute="width" id="rdp-ma-Hry"/>
+                                    <constraint firstItem="Wqe-HR-L1w" firstAttribute="height" secondItem="kq6-0g-A79" secondAttribute="height" multiplier="4" id="yHw-xY-Kuy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B4Z-rQ-D40"/>
+                                        <exclude reference="UzB-mT-jTN"/>
+                                        <exclude reference="rdp-ma-Hry"/>
+                                        <exclude reference="yHw-xY-Kuy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="rdp-ma-Hry"/>
+                                        <include reference="yHw-xY-Kuy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="B4Z-rQ-D40"/>
+                                        <include reference="UzB-mT-jTN"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kq6-0g-A79" secondAttribute="bottom" id="QyV-gp-ZcJ"/>
+                            <constraint firstAttribute="trailing" secondItem="kq6-0g-A79" secondAttribute="trailing" id="Xdy-rR-QuC"/>
+                            <constraint firstItem="kq6-0g-A79" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hjQ-MI-sjm"/>
+                            <constraint firstItem="kq6-0g-A79" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pOO-Db-yoT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-531" y="-990"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FhT-cp-vNt">
+            <objects>
+                <viewController id="63d-CK-YSA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jXW-Ma-ZVV">
+                        <rect key="frame" x="0.0" y="0.0" width="1500" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-Wj-2jK">
+                                <rect key="frame" x="0.0" y="0.0" width="1500" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ep1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YD6-oZ-Wsl">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ep2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="g2A-dl-jYp">
+                                        <rect key="frame" x="375" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ep3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LvL-8p-ZXm">
+                                        <rect key="frame" x="750" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ep4.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4c9-xe-3d2">
+                                        <rect key="frame" x="1125" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="B4u-Wj-2jK" secondAttribute="trailing" id="2og-bN-MfU"/>
+                            <constraint firstAttribute="bottom" secondItem="B4u-Wj-2jK" secondAttribute="bottom" id="YSR-iu-erC"/>
+                            <constraint firstItem="B4u-Wj-2jK" firstAttribute="leading" secondItem="jXW-Ma-ZVV" secondAttribute="leading" id="mUK-Km-XOM"/>
+                            <constraint firstItem="B4u-Wj-2jK" firstAttribute="top" secondItem="jXW-Ma-ZVV" secondAttribute="top" id="pzR-ne-PJE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rVe-Z0-5sg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469" y="593"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ep1.jpg" width="1224" height="1845"/>
+        <image name="ep2.jpg" width="1129" height="1500"/>
+        <image name="ep3.jpg" width="2000" height="3040"/>
+        <image name="ep4.jpg" width="1024" height="1448"/>
+    </resources>
+</document>
