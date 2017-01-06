@@ -44,6 +44,11 @@
 		7F2823391E1E382F00E81EC4 /* Spain.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F28231A1E1E382F00E81EC4 /* Spain.png */; };
 		7F28233A1E1E382F00E81EC4 /* Turkey.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F28231B1E1E382F00E81EC4 /* Turkey.png */; };
 		7F28233B1E1E382F00E81EC4 /* United_Kingdom.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F28231C1E1E382F00E81EC4 /* United_Kingdom.png */; };
+		7F4B09EE1E1F1DBA00A69845 /* TisprCardStackDemoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B09ED1E1F1DBA00A69845 /* TisprCardStackDemoViewCell.swift */; };
+		7F4B0A0F1E1F223400A69845 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B0A0A1E1F223400A69845 /* Info.plist */; };
+		7F4B0A101E1F223400A69845 /* TisprCardStackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B0A0C1E1F223400A69845 /* TisprCardStackViewCell.swift */; };
+		7F4B0A111E1F223400A69845 /* TisprCardStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B0A0D1E1F223400A69845 /* TisprCardStackViewController.swift */; };
+		7F4B0A121E1F223400A69845 /* TisprCardStackViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B0A0E1E1F223400A69845 /* TisprCardStackViewLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +91,12 @@
 		7F28231A1E1E382F00E81EC4 /* Spain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spain.png; sourceTree = "<group>"; };
 		7F28231B1E1E382F00E81EC4 /* Turkey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Turkey.png; sourceTree = "<group>"; };
 		7F28231C1E1E382F00E81EC4 /* United_Kingdom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = United_Kingdom.png; sourceTree = "<group>"; };
+		7F4B09ED1E1F1DBA00A69845 /* TisprCardStackDemoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackDemoViewCell.swift; sourceTree = "<group>"; };
+		7F4B0A0A1E1F223400A69845 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4B0A0B1E1F223400A69845 /* TisprCardStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TisprCardStack.h; sourceTree = "<group>"; };
+		7F4B0A0C1E1F223400A69845 /* TisprCardStackViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewCell.swift; sourceTree = "<group>"; };
+		7F4B0A0D1E1F223400A69845 /* TisprCardStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewController.swift; sourceTree = "<group>"; };
+		7F4B0A0E1E1F223400A69845 /* TisprCardStackViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TisprCardStackViewLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +113,7 @@
 		7F2822D81E1E351000E81EC4 = {
 			isa = PBXGroup;
 			children = (
+				7F4B0A091E1F223400A69845 /* TisprCardStack */,
 				7F2822E31E1E351000E81EC4 /* gridScene */,
 				7F2822E21E1E351000E81EC4 /* Products */,
 			);
@@ -124,6 +136,7 @@
 				7F2822E81E1E351000E81EC4 /* Main.storyboard */,
 				7F2822EB1E1E351000E81EC4 /* Assets.xcassets */,
 				7F2822ED1E1E351000E81EC4 /* LaunchScreen.storyboard */,
+				7F4B09ED1E1F1DBA00A69845 /* TisprCardStackDemoViewCell.swift */,
 				7F2822F01E1E351000E81EC4 /* Info.plist */,
 				7F2822F61E1E360100E81EC4 /* myCell.swift */,
 			);
@@ -192,6 +205,18 @@
 			path = europe;
 			sourceTree = "<group>";
 		};
+		7F4B0A091E1F223400A69845 /* TisprCardStack */ = {
+			isa = PBXGroup;
+			children = (
+				7F4B0A0A1E1F223400A69845 /* Info.plist */,
+				7F4B0A0B1E1F223400A69845 /* TisprCardStack.h */,
+				7F4B0A0C1E1F223400A69845 /* TisprCardStackViewCell.swift */,
+				7F4B0A0D1E1F223400A69845 /* TisprCardStackViewController.swift */,
+				7F4B0A0E1E1F223400A69845 /* TisprCardStackViewLayout.swift */,
+			);
+			path = TisprCardStack;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +249,7 @@
 				TargetAttributes = {
 					7F2822E01E1E351000E81EC4 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -264,6 +290,7 @@
 				7F28232E1E1E382F00E81EC4 /* Thailand.png in Resources */,
 				7F28232D1E1E382F00E81EC4 /* Philippines.png in Resources */,
 				7F28233A1E1E382F00E81EC4 /* Turkey.png in Resources */,
+				7F4B0A0F1E1F223400A69845 /* Info.plist in Resources */,
 				7F2822EC1E1E351000E81EC4 /* Assets.xcassets in Resources */,
 				7F28233B1E1E382F00E81EC4 /* United_Kingdom.png in Resources */,
 				7F2822EA1E1E351000E81EC4 /* Main.storyboard in Resources */,
@@ -297,7 +324,11 @@
 			files = (
 				7F2822E71E1E351000E81EC4 /* ViewController.swift in Sources */,
 				7F2822F71E1E360100E81EC4 /* myCell.swift in Sources */,
+				7F4B09EE1E1F1DBA00A69845 /* TisprCardStackDemoViewCell.swift in Sources */,
+				7F4B0A121E1F223400A69845 /* TisprCardStackViewLayout.swift in Sources */,
 				7F2822E51E1E351000E81EC4 /* AppDelegate.swift in Sources */,
+				7F4B0A111E1F223400A69845 /* TisprCardStackViewController.swift in Sources */,
+				7F4B0A101E1F223400A69845 /* TisprCardStackViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +490,7 @@
 				7F2822F51E1E351000E81EC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
