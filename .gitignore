@@ -6,4 +6,6 @@ project.xcworkspace/
 xcuserdata/
 .DS_Store
 iOS-Samples/
+hw1/
+HW2_UpdownGame.pdf
 !.gitignore
