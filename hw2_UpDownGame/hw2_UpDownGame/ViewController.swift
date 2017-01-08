@@ -60,6 +60,8 @@ class ViewController: UIViewController {
                 upDownLabel.text = "Up"
             } else {
                 upDownLabel.text = "정답"
+                popDialog(title: "정답", btnTitle: "다시하기")
+                initGame(selectedSegment: segmentOfstate.selectedSegmentIndex)
             }
             
             state.current += 1
@@ -68,13 +70,9 @@ class ViewController: UIViewController {
             stateLabel.text = "\(state.current)/\(state.total)"
             
             if state.current == state.total {
-                if upDownLabel.text == "정답" {
-                    popDialog(title: "정답", btnTitle: "다시하기")
-                    initGame(selectedSegment: segmentOfstate.selectedSegmentIndex)
-                } else{
-                    popDialog(title: "실패 답은 \(randomValue!) 입니다", btnTitle: "다시하기")
-                    initGame(selectedSegment: segmentOfstate.selectedSegmentIndex)
-                }
+                popDialog(title: "실패 답은 \(randomValue!) 입니다", btnTitle: "다시하기")
+                initGame(selectedSegment: segmentOfstate.selectedSegmentIndex)
+
             }
         }
         textField.text = nil
