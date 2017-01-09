@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oi1-bL-fmO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="UmL-xV-xgw">
+            <objects>
+                <viewController id="POH-Ri-ycK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WQ1-6l-feW"/>
+                        <viewControllerLayoutGuide type="bottom" id="j7g-8y-p1b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lcu-dj-1DS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8S-Pr-uGH">
+                                <rect key="frame" x="163" y="61" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aㅁㅁㅁ"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="DUA-O8-24N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abj-4Z-8Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="82" y="681"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="y5G-a5-2rK">
+            <objects>
+                <viewController id="Qa7-v1-Hhh" customClass="ViewController" customModule="multiScene_tabBasedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ifi-lz-dU1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qb0-PL-x7p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F79-A9-mgh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBG-xw-vCD">
+                                <rect key="frame" x="156" y="89" width="113" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ppM-jp-gIN">
+                                <rect key="frame" x="129" y="144" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidEndOnExit:" destination="Qa7-v1-Hhh" eventType="editingDidEndOnExit" id="khe-Av-EFk"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="PeM-Mh-oDs"/>
+                    <connections>
+                        <outlet property="label" destination="LBG-xw-vCD" id="Ne8-Fe-psg"/>
+                        <outlet property="textField" destination="ppM-jp-gIN" id="JSc-Fn-rLA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kL9-aS-SpE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893.60000000000002" y="270.31484257871068"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="65X-O8-Vm5">
+            <objects>
+                <viewController id="zYs-WC-Elg" customClass="ViewController" customModule="multiScene_tabBasedApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QT4-yP-dFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xni-Z6-BUh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J1c-9d-oad">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cV-X6-Chb">
+                                <rect key="frame" x="139" y="205" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDidEndOnExit:" destination="zYs-WC-Elg" eventType="editingDidEndOnExit" id="96i-SM-Bxr"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHQ-6n-zxJ">
+                                <rect key="frame" x="161" y="145" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="S6g-Ne-2Ha"/>
+                    <connections>
+                        <outlet property="label" destination="zHQ-6n-zxJ" id="UZU-Ga-69z"/>
+                        <outlet property="textField" destination="5cV-X6-Chb" id="bcb-on-i6q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMH-tv-yyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893.60000000000002" y="-384.55772113943033"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="TsD-Ic-Iwl">
+            <objects>
+                <tabBarController id="oi1-bL-fmO" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="uaA-bt-pxK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zYs-WC-Elg" kind="relationship" relationship="viewControllers" id="JxN-Ny-tOs"/>
+                        <segue destination="Qa7-v1-Hhh" kind="relationship" relationship="viewControllers" id="bLr-3w-Q8f"/>
+                        <segue destination="POH-Ri-ycK" kind="relationship" relationship="viewControllers" id="ccr-kB-AGb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8T-GT-HuI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="-56"/>
+        </scene>
+    </scenes>
+</document>
