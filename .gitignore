@@ -5,4 +5,7 @@ project.xcworkspace/
 !default.perspectivev3
 xcuserdata/
 .DS_Store
+iOS-Samples/
+hw1/
+HW2_UpdownGame.pdf
 !.gitignore

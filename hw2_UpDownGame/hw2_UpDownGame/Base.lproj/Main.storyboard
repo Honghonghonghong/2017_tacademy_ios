@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw2_UpDownGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-fe-2Nr">
+                                <rect key="frame" x="16" y="87.5" width="272" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/5" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHt-ZP-9CW">
+                                <rect key="frame" x="299" y="73" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="72t-UE-bkj"/>
+                                    <constraint firstAttribute="height" constant="30" id="S96-lW-qfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIi-8h-r1A">
+                                <rect key="frame" x="16" y="114.5" width="272" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="beginInputNum:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="Rcl-my-rEV"/>
+                                    <action selector="inputNum:" destination="BYZ-38-t0r" eventType="editingChanged" id="TVT-kA-gbg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9R-pU-OzS">
+                                <rect key="frame" x="329" y="114" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="JzK-H5-79E"/>
+                                    <constraint firstAttribute="height" constant="30" id="qL6-ka-GVq"/>
+                                </constraints>
+                                <state key="normal" title="확인"/>
+                                <connections>
+                                    <action selector="endInputNum" destination="BYZ-38-t0r" eventType="touchUpInside" id="AJY-wN-37H"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1~10 사이의 값 입력" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9u-xt-fq0">
+                                <rect key="frame" x="16" y="166" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ptf-wt-LkC">
+                                <rect key="frame" x="16" y="20" width="343" height="29"/>
+                                <segments>
+                                    <segment title="1-10"/>
+                                    <segment title="1-50"/>
+                                    <segment title="1-100"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="1ds-xu-uuH"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="r9R-pU-OzS" secondAttribute="trailing" id="1RX-CM-7IT"/>
+                            <constraint firstItem="fHt-ZP-9CW" firstAttribute="top" secondItem="ptf-wt-LkC" secondAttribute="bottom" constant="25" id="87d-ar-5mY"/>
+                            <constraint firstItem="fHt-ZP-9CW" firstAttribute="leading" secondItem="Zht-fe-2Nr" secondAttribute="trailing" constant="11" id="BMl-zW-Amq"/>
+                            <constraint firstItem="A9u-xt-fq0" firstAttribute="top" secondItem="XIi-8h-r1A" secondAttribute="bottom" constant="21.5" id="C4t-Vx-0eS"/>
+                            <constraint firstItem="A9u-xt-fq0" firstAttribute="centerX" secondItem="XIi-8h-r1A" secondAttribute="centerX" id="DqM-aW-4sg"/>
+                            <constraint firstItem="r9R-pU-OzS" firstAttribute="leading" secondItem="XIi-8h-r1A" secondAttribute="trailing" constant="41" id="I18-jd-cdE"/>
+                            <constraint firstItem="Zht-fe-2Nr" firstAttribute="top" secondItem="ptf-wt-LkC" secondAttribute="bottom" constant="39" id="Jae-ka-ALO"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zht-fe-2Nr" secondAttribute="leading" id="WR2-N8-5xA"/>
+                            <constraint firstItem="A9u-xt-fq0" firstAttribute="width" secondItem="XIi-8h-r1A" secondAttribute="width" id="hHi-Uq-lZs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fHt-ZP-9CW" secondAttribute="trailing" id="l9u-6E-O7h"/>
+                            <constraint firstItem="r9R-pU-OzS" firstAttribute="top" secondItem="fHt-ZP-9CW" secondAttribute="bottom" constant="11" id="nJc-gX-F0W"/>
+                            <constraint firstItem="ptf-wt-LkC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pf2-wK-CxC"/>
+                            <constraint firstItem="ptf-wt-LkC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pvq-9N-UTM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptf-wt-LkC" secondAttribute="trailing" id="rb3-hy-Adr"/>
+                            <constraint firstItem="ptf-wt-LkC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tfv-zx-gQR"/>
+                            <constraint firstItem="XIi-8h-r1A" firstAttribute="top" secondItem="Zht-fe-2Nr" secondAttribute="bottom" constant="25" id="wqk-Ph-NIt"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="XIi-8h-r1A" secondAttribute="leading" id="ykR-SY-jPs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progresssView" destination="Zht-fe-2Nr" id="k3q-8e-nla"/>
+                        <outlet property="segmentOfstate" destination="ptf-wt-LkC" id="dpA-j1-lor"/>
+                        <outlet property="stateLabel" destination="fHt-ZP-9CW" id="OuT-Pc-Lgc"/>
+                        <outlet property="textField" destination="XIi-8h-r1A" id="6Xp-Bt-Bf4"/>
+                        <outlet property="upDownLabel" destination="A9u-xt-fq0" id="Nrj-Mk-G0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
