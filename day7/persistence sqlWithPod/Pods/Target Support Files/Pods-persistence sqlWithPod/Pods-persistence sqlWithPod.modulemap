@@ -1,0 +1,6 @@
+framework module Pods_persistence_sqlWithPod {
+  umbrella header "Pods-persistence sqlWithPod-umbrella.h"
+
+  export *
+  module * { export * }
+}
