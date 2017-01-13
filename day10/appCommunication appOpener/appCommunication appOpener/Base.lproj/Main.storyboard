@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qWF-kV-6i5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4oA-dQ-0hQ">
+            <objects>
+                <viewController id="qWF-kV-6i5" customClass="ViewController" customModule="appCommunication_appOpener" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wXh-QY-urd"/>
+                        <viewControllerLayoutGuide type="bottom" id="393-JD-lOv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l8q-eC-f2H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="daV-rk-UDo">
+                                <rect key="frame" x="16" y="56" width="343" height="106"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoD-FQ-fbV">
+                                        <rect key="frame" x="117.5" y="0.0" width="108" height="30"/>
+                                        <state key="normal" title="Open OtherApp"/>
+                                        <connections>
+                                            <action selector="openOtherApp:" destination="qWF-kV-6i5" eventType="touchUpInside" id="imO-Dq-uAr"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Kbx-et-jMa">
+                                        <rect key="frame" x="0.0" y="38" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HfC-6B-dVd">
+                                                <rect key="frame" x="0.0" y="0.0" width="48" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lxn-Wa-aG9">
+                                                <rect key="frame" x="56" y="0.0" width="287" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3h8-du-ymc">
+                                        <rect key="frame" x="0.0" y="76" width="343" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="value2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xv-eh-M4u">
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QNb-3U-CPx">
+                                                <rect key="frame" x="58.5" y="0.0" width="284.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Kbx-et-jMa" secondAttribute="trailing" id="4Yp-z2-Yib"/>
+                                    <constraint firstItem="3h8-du-ymc" firstAttribute="leading" secondItem="daV-rk-UDo" secondAttribute="leading" id="R5Y-58-klE"/>
+                                    <constraint firstItem="Kbx-et-jMa" firstAttribute="leading" secondItem="daV-rk-UDo" secondAttribute="leading" id="gpn-GF-EH8"/>
+                                    <constraint firstAttribute="trailing" secondItem="3h8-du-ymc" secondAttribute="trailing" id="qav-RQ-x3v"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFS-Lp-w11">
+                                <rect key="frame" x="62" y="86" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="daV-rk-UDo" firstAttribute="top" secondItem="wXh-QY-urd" secondAttribute="bottom" constant="36" id="LTS-DJ-YaF"/>
+                            <constraint firstItem="daV-rk-UDo" firstAttribute="leading" secondItem="l8q-eC-f2H" secondAttribute="leadingMargin" id="V9h-1n-35U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="daV-rk-UDo" secondAttribute="trailing" id="mAI-ed-tzk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="valueOne" destination="Lxn-Wa-aG9" id="jSR-gg-za6"/>
+                        <outlet property="valueTwo" destination="QNb-3U-CPx" id="D3c-TD-s4y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uzp-LF-Uqi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="214"/>
+        </scene>
+    </scenes>
+</document>
